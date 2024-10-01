@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.menu {
+    margin: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.content {
+    margin: 20px;
+}
+
+.image-container {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    align-items: center; /* Alineamos verticalmente */
+    justify-content: center; /* Centramos los elementos */
+}
+
+#carImage {
+    max-width: 400px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    margin: 0 20px; /* Espacio a los lados de la imagen */
+}
+
+.car-name {
+    font-size: 72px; /* Tamaño grande para el texto */
+    margin: 0 20px; /* Espacio a los lados */
+    position: relative;
+    z-index: 1; /* Asegúrate de que el texto esté por encima de la imagen */
+    text-shadow: 0 0 5px white; /* Agrega un borde blanco suave */
+}
+
+/* Colores diferentes para cada carro */
+#leftText {
+    color: #ff0000; /* Rojo para Ferrari */
+}
+
+#rightText {
+    color: #ff0000; /* Rojo para Ferrari */
+}
+
+#leftText.lamborghini, #rightText.lamborghini {
+    color: #ffcc00; /* Amarillo para Lamborghini */
+}
+
+#leftText.porsche, #rightText.porsche {
+    color: #00ccff; /* Azul para Porsche */
+}
+
+#leftText.mclaren, #rightText.mclaren {
+    color: #ff0066; /* Rosa para McLaren */
+}
+
+#leftText.bugatti, #rightText.bugatti {
+    color: #6600ff; /* Morado para Bugatti */
+}
+
+#leftText.aston, #rightText.aston {
+    color: #339900; /* Verde para Aston Martin */
+}
+
+#leftText.koenigsegg, #rightText.koenigsegg {
+    color: #ff6699; /* Rosa claro para Koenigsegg */
+}
+
+#leftText.nissan, #rightText.nissan {
+    color: #cc0000; /* Rojo oscuro para Nissan GT-R */
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: white;
+}
+
+.controls {
+    margin: 20px;
+}
+
+.arrow {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
